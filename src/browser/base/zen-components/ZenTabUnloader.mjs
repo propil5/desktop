@@ -173,7 +173,12 @@
     }
 
     handleTabClose(tab) {
-      // Nothing yet
+      const tabsBar = document.getElementById('vertical-tabs-bar');
+      const scrollPosition = tabsBar.scrollTop;
+    
+      requestAnimationFrame(() => {
+        tabsBar.scrollTop = scrollPosition;
+      });
     }
 
     handleTabOpen(tab) {
