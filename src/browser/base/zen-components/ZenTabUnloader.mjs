@@ -173,7 +173,7 @@
     }
 
     handleTabClose(tab) {
-      const tabsBar = document.getElementById('vertical-tabs-bar');
+      const tabsBar = document.getElementById('vertical-tabs-bar'); //TODO: Verify if this is right
       const scrollPosition = tabsBar.scrollTop;
     
       requestAnimationFrame(() => {
